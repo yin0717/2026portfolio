@@ -108,6 +108,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  overflow: visible;
 }
 #navbar {
   display: flex;
@@ -760,8 +761,8 @@ footer p {
   /* Nav mobile */
   .nav-toggle { display: flex; }
   .nav-links {
-    position: fixed;
-    top: var(--nav-h);
+    position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
     background: var(--bg);
@@ -773,10 +774,12 @@ footer p {
     transform: translateY(-110%);
     transition: transform 0.3s ease;
     pointer-events: none;
+    visibility: hidden;
   }
   .nav-links.open {
     transform: translateY(0);
     pointer-events: all;
+    visibility: visible;
   }
   .nav-links li { padding: 0; }
   .nav-links a {
