@@ -795,6 +795,11 @@ footer p {
   .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
   .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
+  #hero {
+    min-height: unset;
+    padding: 40px 24px;
+  }
+
   /* Grids → single column */
   .about-grid,
   .research-grid,
